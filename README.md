@@ -24,7 +24,8 @@ The AWS Cloud Intelligence Dashboards provide comprehensive cost and usage analy
 ### 1. Authenticate to AWS
 
 ```bash
-saml2aws login --role arn:aws:iam::145023124830:role/Okta-TeamFinOps-finops
+# Authenticate to your AWS account using your preferred method
+# Example: saml2aws login --role <your-role-arn>
 ```
 
 ### 2. Deploy Step 1 (CUR Aggregation)
