@@ -21,7 +21,7 @@ Since the CLI role doesn't have CloudFormation permissions, use the AWS Console 
    - Parameters:
      - **DestinationAccountId**: `145023124830`
      - **ManageCUR2**: `yes`
-     - **SourceAccountId**: `368154587575` (or comma-separated list if multiple)
+     - **SourceAccountId**: `905418394749` (klaviyo-org - Management/Payer Account, or comma-separated list if multiple)
      - Leave other parameters as default unless you need Cost Optimization Hub or FOCUS exports
    - Click "Next"
 

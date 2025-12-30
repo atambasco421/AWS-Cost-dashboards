@@ -39,13 +39,15 @@ fi
 # Get source account IDs
 echo ""
 echo "Enter Source Account IDs (comma-separated):"
+echo "  - Default: 905418394749 (klaviyo-org - Management/Payer Account)"
 echo "  - If this is the Management/Payer Account, include ${ACCOUNT_ID} as first account"
-echo "  - Example: 145023124830,123456789012,987654321098"
-read -p "Source Account IDs: " SOURCE_ACCOUNTS
+echo "  - Example: 145023124830,905418394749"
+read -p "Source Account IDs [905418394749]: " SOURCE_ACCOUNTS
 
+# Use default if empty
 if [ -z "$SOURCE_ACCOUNTS" ]; then
-    echo "ERROR: Source Account IDs are required"
-    exit 1
+    SOURCE_ACCOUNTS="905418394749"
+    echo "Using default source account: ${SOURCE_ACCOUNTS}"
 fi
 
 # CloudFormation template URL

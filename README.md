@@ -56,7 +56,7 @@ This will deploy the CUDOS dashboard and create QuickSight datasets.
 ## Account Information
 
 - **Data Collection Account**: klaviyo-finops (145023124830)
-- **Likely Source Account**: klaviyo-prod (368154587575)
+- **Source Account (CUR)**: klaviyo-org (905418394749) - Management/Payer Account
 - **Recommended Region**: us-east-1
 
 ## Documentation
