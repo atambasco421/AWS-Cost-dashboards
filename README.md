@@ -16,8 +16,10 @@ The AWS Cloud Intelligence Dashboards provide comprehensive cost and usage analy
 ## Repository Contents
 
 - `deploy_cudos_step1.sh` - Step 1: Deploy CUR aggregation destination in Data Collection Account
+- `deploy_cudos_step2.sh` - Step 2: Deploy CUR 2.0 and replication in Source Account
 - `deploy_cudos_step3.sh` - Step 3: Deploy CUDOS dashboard stack
 - `deploy_cudos_dashboard.md` - Complete deployment guide with detailed instructions
+- `STEP2_DEPLOYMENT_INSTRUCTIONS.md` - Detailed instructions for Step 2 deployment
 
 ## Quick Start
 
@@ -41,9 +43,12 @@ This will:
 
 ### 3. Deploy Step 2 (in Source Account)
 
-Deploy the CloudFormation template in your Management/Payer Account with:
-- `DestinationAccountId`: `145023124830`
-- Select exports to manage
+Deploy in **klaviyo-org** account (905418394749) using:
+```bash
+./deploy_cudos_step2.sh
+```
+
+Or see `STEP2_DEPLOYMENT_INSTRUCTIONS.md` for manual deployment steps.
 
 ### 4. Deploy Step 3 (Dashboard)
 
